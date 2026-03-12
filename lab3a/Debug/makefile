@@ -60,8 +60,8 @@ all: main-build
 main-build: lab3a.elf secondary-outputs
 
 # Tool invocations
-lab3a.elf lab3a.map: $(OBJS) $(USER_OBJS) /Users/rufatmammadov/STM32CubeIDE/micro_project/lab3a/STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "lab3a.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/rufatmammadov/STM32CubeIDE/micro_project/lab3a/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3a.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lab3a.elf lab3a.map: $(OBJS) $(USER_OBJS) /Users/rufatmammadov/Projects/microcontrollers/stm-32/lab3a/STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "lab3a.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/Users/rufatmammadov/Projects/microcontrollers/stm-32/lab3a/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lab3a.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

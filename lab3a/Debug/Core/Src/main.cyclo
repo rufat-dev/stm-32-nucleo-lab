@@ -1,6 +1,6 @@
 ../Core/Src/main.c:69:5:main	2
-../Core/Src/main.c:135:13:BlinkTimes	2
-../Core/Src/main.c:150:6:HAL_GPIO_EXTI_Callback	3
-../Core/Src/main.c:169:6:SystemClock_Config	3
-../Core/Src/main.c:211:13:MX_GPIO_Init	1
-../Core/Src/main.c:255:6:Error_Handler	1
+../Core/Src/main.c:133:13:BlinkTimes	2
+../Core/Src/main.c:148:6:HAL_GPIO_EXTI_Callback	3
+../Core/Src/main.c:167:6:SystemClock_Config	3
+../Core/Src/main.c:209:13:MX_GPIO_Init	1
+../Core/Src/main.c:253:6:Error_Handler	1
