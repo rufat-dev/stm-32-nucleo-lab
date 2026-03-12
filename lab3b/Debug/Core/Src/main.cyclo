@@ -1,0 +1,9 @@
+../Core/Src/main.c:65:13:BlinkTimes	2
+../Core/Src/main.c:81:13:BlinkRestartPattern	2
+../Core/Src/main.c:97:13:BlinkStandbyPattern	1
+../Core/Src/main.c:123:13:EnterStandbyMode	1
+../Core/Src/main.c:140:6:HAL_GPIO_EXTI_Callback	3
+../Core/Src/main.c:166:5:main	4
+../Core/Src/main.c:237:6:SystemClock_Config	3
+../Core/Src/main.c:279:13:MX_GPIO_Init	1
+../Core/Src/main.c:325:6:Error_Handler	1
