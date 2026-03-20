@@ -152,7 +152,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     lastTick13 = now;
 
     g_wakeCount++;
-    g_doBlink = 1;
     g_requestStandby = 1;
   }
 }
@@ -195,6 +194,7 @@ int main(void)
     __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);
     __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
 
+    g_doBlink = 1;
     BlinkRestartPattern();
   }
   else
